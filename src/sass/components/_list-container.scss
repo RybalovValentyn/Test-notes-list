@@ -1,0 +1,79 @@
+@import '../base/var';
+
+.notes-list{
+    width: 100%;
+}
+.container-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 65px;
+    background-color: $listItemColor;
+}
+
+.container-title-list{
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    color: $allTextColor;
+    
+    li{
+        font-size: 27px;
+        font-weight: 500; 
+        padding: 10px;   
+        white-space: nowrap;   
+        overflow-x: hidden;
+        text-overflow: ellipsis;    
+        &:first-child{
+        margin-left: 10px;
+            
+                }
+        &:nth-child(2){
+            width:$widthTextContainer;
+            color: $nameTextcolor;            
+
+         }
+        &:nth-child(3){
+            width:$widthTextContainer;
+        }
+        &:nth-child(4){
+            padding: 0;
+            width:$widthTextContainer;
+
+         }
+         &:nth-child(5){
+            width:$widthTextContainer;
+        }
+    }
+}
+.container-title-images{
+    width: 150px;
+    
+}
+.table-row-svg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: $colorSvgFill;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: $primaryBgColor;
+}
+.container-title-images{
+    display: flex;
+    justify-content: flex-end;
+    li {
+        margin-right: 17px;
+        button{
+            padding: 0;
+            background-color: inherit;
+            border: none;
+        }
+    }
+}
+.title-image-list{
+    fill: $primaryBgColor;
+}

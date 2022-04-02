@@ -1,0 +1,64 @@
+@import '../base/var';
+.head-title{
+opacity: 0;
+width: opx;
+height: 0px;
+}
+.table-head{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+    height: 30px;
+    max-width: 100%;
+    background-color: $primaryBgColor;
+    border-radius: 6px;
+}
+
+.table-head-container{
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+}
+.table-head-item{
+    font-size: 25px;
+    font-weight: 700;
+    color: $titleColor;
+    font-family: Arial, Helvetica, sans-serif;
+    width: $widthTextContainer;
+    &:first-child{
+    margin-left: 80px;
+    margin-right: 20px;
+    }
+    &:nth-child(3){
+        margin-left: 10px;
+    }
+    &:nth-child(4){
+        margin-left: 10px;
+    }
+    &:last-child {
+        margin-right:  70px;
+        margin-left: 10px;
+    }
+}
+.category-icons{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.table-head-svg{
+    width: 35px;
+    height: 30px;
+    background-color: $primaryBgColor;
+    fill: $colorSvgFill;
+}
+.btn-image{
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    margin-right: 15px;
+
+}
