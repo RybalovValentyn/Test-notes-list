@@ -1,0 +1,13 @@
+ul .archiv-item{
+   
+    &:nth-child(2){
+        margin-left: 300px;
+        margin-right: 100px;
+           }
+
+}
+
+.is-activ-item{
+    margin-left: 310px;
+    margin-right: 100px;
+}

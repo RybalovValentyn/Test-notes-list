@@ -1,0 +1,26 @@
+<div class="modal-backdrop is-hiden" >
+    <div class="modal-container" >
+        <form class="task-form">
+            <label for="uname">Enter task name: </label>
+            <input class="task-input" type="text"  id="uname" name="name" placeholder="enter your task" >
+
+            <label for="content">Enter content of task: </label>
+            <input class="content-input" type="text"  id="content" name="content" placeholder="enter your content" >
+
+            <label for="task">Choose a type of task:</label>
+            <select class="task-select" name="task" autofocus required >
+                <option value="Task">Task</option>
+                <option value="Quote">Quote</option>
+                <option value="Idea">Idea</option>
+                <option value="Random Thought">Random Thought</option>
+              </select>
+
+            <label for="day">Enter task end date:</label>
+              <input class="task-data" type="date" value=""  name="day" pattern="\d{2}-\d{2}-\d{4}">
+              <!-- <span class="validity"></span> -->
+            
+            <button class="form-submit-btn" type="submit">Submit</button>
+          
+          </form>
+    </div>
+</div>
