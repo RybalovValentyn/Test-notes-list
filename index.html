@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+    <title>Test-notes</title>
+</head>
+<body>
+    <div id="root">
+        <section class="container">
+    <h1 class="head-title">Notes</h1>
+   <div class="table-head">
+       <ul class="table-head-container">
+           <li class="table-head-item">Name</li>
+           <li class="table-head-item">Created</li>
+           <li class="table-head-item">Category</li>
+           <li class="table-head-item">Content</li>
+           <li class="table-head-item">Dates</li>
+       </ul>
+       <ul class="category-icons">
+<li>
+    <button type="button" class="btn-image" >
+        <svg class="table-head-svg">
+       <use href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI3NTIiIGhlaWdodD0iMTA4IiB2aWV3Qm94PSIwIDAgNzUyIDEwOCI+CjxzdmcgaWQ9Imljb24tY3JlYXRlc3B0IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeD0iMCIgeT0iMCI+CjxwYXRoIGQ9Ik0yMC43MTkgNy4wMzFsLTEuODI4IDEuODI4LTMuNzUtMy43NSAxLjgyOC0xLjgyOHEwLjI4MS0wLjI4MSAwLjcwMy0wLjI4MXQwLjcwMyAwLjI4MWwyLjM0NCAyLjM0NHEwLjI4MSAwLjI4MSAwLjI4MSAwLjcwM3QtMC4yODEgMC43MDN6TTMgMTcuMjVsMTEuMDYzLTExLjA2MyAzLjc1IDMuNzUtMTEuMDYzIDExLjA2M2gtMy43NXYtMy43NXoiPjwvcGF0aD4KPC9zdmc+CjxzdmcgaWQ9Imljb24tZm9ybWF0X3F1b3Rlc3B0IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeD0iNDAiIHk9IjAiPgo8cGF0aCBkPSJNMTQuMDE2IDE3LjAxNmwxLjk2OS00LjAzMWgtM3YtNmg2djZsLTEuOTY5IDQuMDMxaC0zek02IDE3LjAxNmwyLjAxNi00LjAzMWgtM3YtNmg2djZsLTIuMDE2IDQuMDMxaC0zeiI+PC9wYXRoPgo8L3N2Zz4KPHN2ZyBpZD0iaWNvbi1saWdodGJ1bGJfb3V0bGluZXNwdCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHg9IjgwIiB5PSIwIj4KPHBhdGggZD0iTTE0Ljg1OSAxMy4wNzhxMi4xNTYtMS41IDIuMTU2LTQuMDc4IDAtMi4wNjMtMS40NzctMy41Mzl0LTMuNTM5LTEuNDc3LTMuNTM5IDEuNDc3LTEuNDc3IDMuNTM5cTAgMS4wNzggMC42MzMgMi4yNXQxLjUyMyAxLjgyOGwwLjg0NCAwLjYwOXYyLjI5N2g0LjAzMXYtMi4yOTd6TTEyIDIuMDE2cTIuOTA2IDAgNC45NDUgMi4wMzl0Mi4wMzkgNC45NDVxMCAzLjY1Ni0zIDUuNzE5djIuMjk3cTAgMC40MjItMC4yODEgMC43MDN0LTAuNzAzIDAuMjgxaC02cS0wLjQyMiAwLTAuNzAzLTAuMjgxdC0wLjI4MS0wLjcwM3YtMi4yOTdxLTMtMi4wNjMtMy01LjcxOSAwLTIuOTA2IDIuMDM5LTQuOTQ1dDQuOTQ1LTIuMDM5ek05IDIxdi0wLjk4NGg2djAuOTg0cTAgMC40MjItMC4yODEgMC43MDN0LTAuNzAzIDAuMjgxaC00LjAzMXEtMC40MjIgMC0wLjcwMy0wLjI4MXQtMC4yODEtMC43MDN6Ij48L3BhdGg+Cjwvc3ZnPgo8c3ZnIGlkPSJpY29uLXBzeWNob2xvZ3lzcHQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiB4PSIxMjAiIHk9IjAiPgo8cGF0aCBkPSJNMTIuOTg0IDguNTc4cS0wLjU2MyAwLTAuOTg0IDAuNDIydC0wLjQyMiAwLjk4NHEwIDAuNjA5IDAuNDIyIDEuMDMxdDAuOTg0IDAuNDIycTAuNjA5IDAgMS4wMzEtMC40MjJ0MC40MjItMS4wMzFxMC0wLjU2My0wLjQyMi0wLjk4NHQtMS4wMzEtMC40MjJ6TTEyLjk4NCAzcS0xLjQwNiAwLTIuNjI1IDAuNTE2dC0yLjE4IDEuNDMtMS41MjMgMi4xMDktMC42NTYgMi42MDJsLTEuOTIyIDIuNTMxcS0wLjE4OCAwLjI4MS0wLjA0NyAwLjUzOXQwLjQ2OSAwLjI1OGgxLjV2M3EwIDAuODQ0IDAuNTg2IDEuNDN0MS40MyAwLjU4NmgwLjk4NHYzaDYuOTg0di00LjY4OHExLjc4MS0wLjg0NCAyLjkwNi0yLjUzMXQxLjEyNS0zLjc5N3EwLTEuNDUzLTAuNTYzLTIuNzE5dC0xLjUyMy0yLjIyNy0yLjIyNy0xLjUtMi43MTktMC41Mzl6TTE1Ljk4NCA5Ljk4NHYwLjQyMmwwLjg0NCAwLjY1NnEwLjA5NCAwLjA5NCAwLjA0NyAwLjIzNGwtMC43OTcgMS40MDZxLTAuMDk0IDAuMTQxLTAuMjgxIDAuMDk0bC0wLjk4NC0wLjQyMnEtMC4yODEgMC4yMzQtMC42NTYgMC4zNzVsLTAuMTQxIDEuMDc4cS0wLjA0NyAwLjE4OC0wLjIzNCAwLjE4OGgtMS41OTRxLTAuMTQxIDAtMC4xODgtMC4xODhsLTAuMTQxLTEuMDc4cS0wLjM3NS0wLjE0MS0wLjcwMy0wLjM3NWwtMC45ODQgMC40MjJxLTAuMTQxIDAuMDQ3LTAuMjM0LTAuMDk0bC0wLjc5Ny0xLjQwNnEtMC4wOTQtMC4xNDEgMC4wNDctMC4yMzRsMC44NDQtMC42NTZxMC0wLjA5NC0wLjAyMy0wLjIxMXQtMC4wMjMtMC4yMTEgMC4wMjMtMC4xODggMC4wMjMtMC4xODhsLTAuODQ0LTAuNjU2cS0wLjE0MS0wLjA5NC0wLjA0Ny0wLjI4MWwwLjc5Ny0xLjM1OXEwLjA5NC0wLjE0MSAwLjIzNC0wLjA5NGwxLjAzMSAwLjQyMnEwLjMyOC0wLjI4MSAwLjY1Ni0wLjQyMmwwLjE0MS0xLjAzMXEwLjA0Ny0wLjE4OCAwLjE4OC0wLjE4OGgxLjU5NHEwLjE4OCAwIDAuMjM0IDAuMTg4bDAuMTQxIDEuMDMxcTAuMzI4IDAuMTQxIDAuNjU2IDAuNDIybDAuOTg0LTAuNDIycTAuMTg4LTAuMDQ3IDAuMjgxIDAuMDk0bDAuNzk3IDEuMzU5cTAuMDk0IDAuMTg4LTAuMDQ3IDAuMjgxbC0wLjg5MSAwLjY1NnEwLjA0NyAwLjE0MSAwLjA0NyAwLjM3NXoiPjwvcGF0aD4KPC9zdmc+CjxzdmcgaWQ9Imljb24tc2hvcHBpbmctY2FydHNwdCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMzIiPgo8cGF0aCBkPSJNNCAyaDE2bC0zIDloLTEzYy0wLjU1MiAwLTEgMC40NDgtMSAxczAuNDQ4IDEgMSAxdjBoMTN2MmgtMTNjLTEuNjU3IDAtMy0xLjM0My0zLTNzMS4zNDMtMyAzLTN2MGgwLjMzbC0xLjMzLTQtMS0zaC0ydi0yaDNjMC41NTIgMCAxIDAuNDQ4IDEgMXYwIDF6TTUgMjBjLTEuMTA1IDAtMi0wLjg5NS0yLTJzMC44OTUtMiAyLTJ2MGMxLjEwNSAwIDIgMC44OTUgMiAycy0wLjg5NSAyLTIgMnYwek0xNSAyMGMtMS4xMDUgMC0yLTAuODk1LTItMnMwLjg5NS0yIDItMnYwYzEuMTA1IDAgMiAwLjg5NSAyIDJzLTAuODk1IDItMiAydjB6Ij48L3BhdGg+Cjwvc3ZnPgo8c3ZnIGlkPSJpY29uLXBlbmNpbHNwdCIgIHZpZXdCb3g9IjAgMCAzMiAzMiIgeD0iMCIgeT0iNzYiPgo8cGF0aCBkPSJNMjcgMGMyLjc2MSAwIDUgMi4yMzkgNSA1IDAgMS4xMjYtMC4zNzIgMi4xNjQtMSAzbC0yIDItNy03IDItMmMwLjgzNi0wLjYyOCAxLjg3NC0xIDMtMXpNMiAyM2wtMiA5IDktMiAxOC41LTE4LjUtNy03LTE4LjUgMTguNXpNMjIuMzYyIDExLjM2MmwtMTQgMTQtMS43MjQtMS43MjQgMTQtMTQgMS43MjQgMS43MjR6Ij48L3BhdGg+Cjwvc3ZnPgo8c3ltYm9sIGlkPSJpY29uLWJveC1hZGRzcHQiIHZpZXdCb3g9IjAgMCAzMiAzMiIgPgo8cGF0aCBkPSJNMjYgMmgtMjBsLTYgNnYyMWMwIDAuNTUyIDAuNDQ4IDEgMSAxaDMwYzAuNTUyIDAgMS0wLjQ0OCAxLTF2LTIxbC02LTZ6TTE2IDI2bC0xMC04aDZ2LTZoOHY2aDZsLTEwIDh6TTQuODI4IDZsMi0yaDE4LjM0M2wyIDJoLTIyLjM0M3oiPjwvcGF0aD4KPC9zeW1ib2w+CjxzdmcgaWQ9Imljb24tYmluMnNwdCIgdmlld0JveD0iMCAwIDMyIDMyIj4KPHBhdGggZD0iTTYgMzJoMjBsMi0yMmgtMjR6TTIwIDR2LTRoLTh2NGgtMTB2NmwyLTJoMjRsMiAydi02aC0xMHpNMTggNGgtNHYtMmg0djJ6Ij48L3BhdGg+Cjwvc3ZnPgo8L3N2Zz4K#icon-box-addspt"></use>
+     </svg>
+    </button>
+</li>
+<li>
+    <button type="button" class="btn-image" >
+        <svg class="table-head-svg">
+       <use href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI3NTIiIGhlaWdodD0iMTA4IiB2aWV3Qm94PSIwIDAgNzUyIDEwOCI+CjxzdmcgaWQ9Imljb24tY3JlYXRlc3B0IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeD0iMCIgeT0iMCI+CjxwYXRoIGQ9Ik0yMC43MTkgNy4wMzFsLTEuODI4IDEuODI4LTMuNzUtMy43NSAxLjgyOC0xLjgyOHEwLjI4MS0wLjI4MSAwLjcwMy0wLjI4MXQwLjcwMyAwLjI4MWwyLjM0NCAyLjM0NHEwLjI4MSAwLjI4MSAwLjI4MSAwLjcwM3QtMC4yODEgMC43MDN6TTMgMTcuMjVsMTEuMDYzLTExLjA2MyAzLjc1IDMuNzUtMTEuMDYzIDExLjA2M2gtMy43NXYtMy43NXoiPjwvcGF0aD4KPC9zdmc+CjxzdmcgaWQ9Imljb24tZm9ybWF0X3F1b3Rlc3B0IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeD0iNDAiIHk9IjAiPgo8cGF0aCBkPSJNMTQuMDE2IDE3LjAxNmwxLjk2OS00LjAzMWgtM3YtNmg2djZsLTEuOTY5IDQuMDMxaC0zek02IDE3LjAxNmwyLjAxNi00LjAzMWgtM3YtNmg2djZsLTIuMDE2IDQuMDMxaC0zeiI+PC9wYXRoPgo8L3N2Zz4KPHN2ZyBpZD0iaWNvbi1saWdodGJ1bGJfb3V0bGluZXNwdCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHg9IjgwIiB5PSIwIj4KPHBhdGggZD0iTTE0Ljg1OSAxMy4wNzhxMi4xNTYtMS41IDIuMTU2LTQuMDc4IDAtMi4wNjMtMS40NzctMy41Mzl0LTMuNTM5LTEuNDc3LTMuNTM5IDEuNDc3LTEuNDc3IDMuNTM5cTAgMS4wNzggMC42MzMgMi4yNXQxLjUyMyAxLjgyOGwwLjg0NCAwLjYwOXYyLjI5N2g0LjAzMXYtMi4yOTd6TTEyIDIuMDE2cTIuOTA2IDAgNC45NDUgMi4wMzl0Mi4wMzkgNC45NDVxMCAzLjY1Ni0zIDUuNzE5djIuMjk3cTAgMC40MjItMC4yODEgMC43MDN0LTAuNzAzIDAuMjgxaC02cS0wLjQyMiAwLTAuNzAzLTAuMjgxdC0wLjI4MS0wLjcwM3YtMi4yOTdxLTMtMi4wNjMtMy01LjcxOSAwLTIuOTA2IDIuMDM5LTQuOTQ1dDQuOTQ1LTIuMDM5ek05IDIxdi0wLjk4NGg2djAuOTg0cTAgMC40MjItMC4yODEgMC43MDN0LTAuNzAzIDAuMjgxaC00LjAzMXEtMC40MjIgMC0wLjcwMy0wLjI4MXQtMC4yODEtMC43MDN6Ij48L3BhdGg+Cjwvc3ZnPgo8c3ZnIGlkPSJpY29uLXBzeWNob2xvZ3lzcHQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiB4PSIxMjAiIHk9IjAiPgo8cGF0aCBkPSJNMTIuOTg0IDguNTc4cS0wLjU2MyAwLTAuOTg0IDAuNDIydC0wLjQyMiAwLjk4NHEwIDAuNjA5IDAuNDIyIDEuMDMxdDAuOTg0IDAuNDIycTAuNjA5IDAgMS4wMzEtMC40MjJ0MC40MjItMS4wMzFxMC0wLjU2My0wLjQyMi0wLjk4NHQtMS4wMzEtMC40MjJ6TTEyLjk4NCAzcS0xLjQwNiAwLTIuNjI1IDAuNTE2dC0yLjE4IDEuNDMtMS41MjMgMi4xMDktMC42NTYgMi42MDJsLTEuOTIyIDIuNTMxcS0wLjE4OCAwLjI4MS0wLjA0NyAwLjUzOXQwLjQ2OSAwLjI1OGgxLjV2M3EwIDAuODQ0IDAuNTg2IDEuNDN0MS40MyAwLjU4NmgwLjk4NHYzaDYuOTg0di00LjY4OHExLjc4MS0wLjg0NCAyLjkwNi0yLjUzMXQxLjEyNS0zLjc5N3EwLTEuNDUzLTAuNTYzLTIuNzE5dC0xLjUyMy0yLjIyNy0yLjIyNy0xLjUtMi43MTktMC41Mzl6TTE1Ljk4NCA5Ljk4NHYwLjQyMmwwLjg0NCAwLjY1NnEwLjA5NCAwLjA5NCAwLjA0NyAwLjIzNGwtMC43OTcgMS40MDZxLTAuMDk0IDAuMTQxLTAuMjgxIDAuMDk0bC0wLjk4NC0wLjQyMnEtMC4yODEgMC4yMzQtMC42NTYgMC4zNzVsLTAuMTQxIDEuMDc4cS0wLjA0NyAwLjE4OC0wLjIzNCAwLjE4OGgtMS41OTRxLTAuMTQxIDAtMC4xODgtMC4xODhsLTAuMTQxLTEuMDc4cS0wLjM3NS0wLjE0MS0wLjcwMy0wLjM3NWwtMC45ODQgMC40MjJxLTAuMTQxIDAuMDQ3LTAuMjM0LTAuMDk0bC0wLjc5Ny0xLjQwNnEtMC4wOTQtMC4xNDEgMC4wNDctMC4yMzRsMC44NDQtMC42NTZxMC0wLjA5NC0wLjAyMy0wLjIxMXQtMC4wMjMtMC4yMTEgMC4wMjMtMC4xODggMC4wMjMtMC4xODhsLTAuODQ0LTAuNjU2cS0wLjE0MS0wLjA5NC0wLjA0Ny0wLjI4MWwwLjc5Ny0xLjM1OXEwLjA5NC0wLjE0MSAwLjIzNC0wLjA5NGwxLjAzMSAwLjQyMnEwLjMyOC0wLjI4MSAwLjY1Ni0wLjQyMmwwLjE0MS0xLjAzMXEwLjA0Ny0wLjE4OCAwLjE4OC0wLjE4OGgxLjU5NHEwLjE4OCAwIDAuMjM0IDAuMTg4bDAuMTQxIDEuMDMxcTAuMzI4IDAuMTQxIDAuNjU2IDAuNDIybDAuOTg0LTAuNDIycTAuMTg4LTAuMDQ3IDAuMjgxIDAuMDk0bDAuNzk3IDEuMzU5cTAuMDk0IDAuMTg4LTAuMDQ3IDAuMjgxbC0wLjg5MSAwLjY1NnEwLjA0NyAwLjE0MSAwLjA0NyAwLjM3NXoiPjwvcGF0aD4KPC9zdmc+CjxzdmcgaWQ9Imljb24tc2hvcHBpbmctY2FydHNwdCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMzIiPgo8cGF0aCBkPSJNNCAyaDE2bC0zIDloLTEzYy0wLjU1MiAwLTEgMC40NDgtMSAxczAuNDQ4IDEgMSAxdjBoMTN2MmgtMTNjLTEuNjU3IDAtMy0xLjM0My0zLTNzMS4zNDMtMyAzLTN2MGgwLjMzbC0xLjMzLTQtMS0zaC0ydi0yaDNjMC41NTIgMCAxIDAuNDQ4IDEgMXYwIDF6TTUgMjBjLTEuMTA1IDAtMi0wLjg5NS0yLTJzMC44OTUtMiAyLTJ2MGMxLjEwNSAwIDIgMC44OTUgMiAycy0wLjg5NSAyLTIgMnYwek0xNSAyMGMtMS4xMDUgMC0yLTAuODk1LTItMnMwLjg5NS0yIDItMnYwYzEuMTA1IDAgMiAwLjg5NSAyIDJzLTAuODk1IDItMiAydjB6Ij48L3BhdGg+Cjwvc3ZnPgo8c3ZnIGlkPSJpY29uLXBlbmNpbHNwdCIgIHZpZXdCb3g9IjAgMCAzMiAzMiIgeD0iMCIgeT0iNzYiPgo8cGF0aCBkPSJNMjcgMGMyLjc2MSAwIDUgMi4yMzkgNSA1IDAgMS4xMjYtMC4zNzIgMi4xNjQtMSAzbC0yIDItNy03IDItMmMwLjgzNi0wLjYyOCAxLjg3NC0xIDMtMXpNMiAyM2wtMiA5IDktMiAxOC41LTE4LjUtNy03LTE4LjUgMTguNXpNMjIuMzYyIDExLjM2MmwtMTQgMTQtMS43MjQtMS43MjQgMTQtMTQgMS43MjQgMS43MjR6Ij48L3BhdGg+Cjwvc3ZnPgo8c3ltYm9sIGlkPSJpY29uLWJveC1hZGRzcHQiIHZpZXdCb3g9IjAgMCAzMiAzMiIgPgo8cGF0aCBkPSJNMjYgMmgtMjBsLTYgNnYyMWMwIDAuNTUyIDAuNDQ4IDEgMSAxaDMwYzAuNTUyIDAgMS0wLjQ0OCAxLTF2LTIxbC02LTZ6TTE2IDI2bC0xMC04aDZ2LTZoOHY2aDZsLTEwIDh6TTQuODI4IDZsMi0yaDE4LjM0M2wyIDJoLTIyLjM0M3oiPjwvcGF0aD4KPC9zeW1ib2w+CjxzdmcgaWQ9Imljb24tYmluMnNwdCIgdmlld0JveD0iMCAwIDMyIDMyIj4KPHBhdGggZD0iTTYgMzJoMjBsMi0yMmgtMjR6TTIwIDR2LTRoLTh2NGgtMTB2NmwyLTJoMjRsMiAydi02aC0xMHpNMTggNGgtNHYtMmg0djJ6Ij48L3BhdGg+Cjwvc3ZnPgo8L3N2Zz4K#icon-bin2spt"></use>
+     </svg>
+    </button>
+
+</li>
+ </ul>
+   </div>
+   <ul class="notes-list"></ul>
+   <button class="add-btn" type="button">Create Note</button>
+</section>
+        <section class="container archiv-container">
+    <h1 class="head-title">Archiv Notes</h1>
+   <div class="table-head">
+       <ul class="table-head-container ">
+           <li class="table-head-item archiv-item">Note Category</li>
+           <li class="table-head-item archiv-item">Activ</li>
+           <li class="table-head-item archiv-item">Archived</li>
+       </ul>
+
+   </div>
+   <ul class="notes-list table-archiv-container"></ul>
+</section>
+        <div class="modal-backdrop is-hiden" >
+    <div class="modal-container" >
+        <form class="task-form">
+            <label for="uname">Enter task name: </label>
+            <input class="task-input" type="text"  id="uname" name="name" placeholder="enter your task" >
+
+            <label for="content">Enter content of task: </label>
+            <input class="content-input" type="text"  id="content" name="content" placeholder="enter your content" >
+
+            <label for="task">Choose a type of task:</label>
+            <select class="task-select" name="task" autofocus required >
+                <option value="Task">Task</option>
+                <option value="Quote">Quote</option>
+                <option value="Idea">Idea</option>
+                <option value="Random Thought">Random Thought</option>
+              </select>
+
+            <label for="day">Enter task end date:</label>
+              <input class="task-data" type="date" value=""  name="day" pattern="\d{2}-\d{2}-\d{4}">
+              <!-- <span class="validity"></span> -->
+            
+            <button class="form-submit-btn" type="submit">Submit</button>
+          
+          </form>
+    </div>
+</div>
+    </div>
+<script defer src="main.bandle.js"></script></body>
+</html>
