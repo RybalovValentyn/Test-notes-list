@@ -19,12 +19,11 @@ refs.formTask.addEventListener('submit', onselectedTask)
 function onselectedTask(e) {
     e.preventDefault();
     let renderNotes = new GetModalData()
-     console.log(renderNotes);
     
     getRenderList([renderNotes]);
 
     getDataTooDb(renderNotes);
-
+    initialModalInput();
     closeModalButton();
 }
 
@@ -90,6 +89,12 @@ const isDate = (dats) =>{
 
 function getDataTooDb(notes) {
     data.push(notes)
-    console.log('data',data);
+};
+
+function initialModalInput() {
+    refs.taskName.value = '';
+    refs.taskContent.value = '';
+    getDateForm(date)
 }
 
+export {onselectedTask, refs}

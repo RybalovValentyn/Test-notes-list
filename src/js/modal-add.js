@@ -22,4 +22,4 @@ if (e.target.classList[0] === "modal-backdrop") {
 function closeModalButton() {
     refs.backdrop.classList.replace('is-open', 'is-hiden');
 }
-export {closeModalButton}
+export {closeModalButton, openModal, closeModal}

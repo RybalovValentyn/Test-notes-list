@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "test-notes",
   "main": "index.js",
+  "homepage": " https://rybalovvalentyn.github.io/Test-notes-list",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Rybalow Walentyn",
@@ -15,6 +17,7 @@
     "@mui/icons-material": "^5.5.1",
     "clean-webpack-plugin": "^4.0.0",
     "crypto": "^1.0.1",
+    "gh-pages": "^3.2.3",
     "html-loader": "^3.1.0",
     "uniqid": "^5.4.0",
     "uuid": "^8.3.2",
@@ -51,6 +54,5 @@
   },
   "bugs": {
     "url": "https://github.com/RybalovValentyn/Test-notes-list/issues"
-  },
-  "homepage": "https://github.com/RybalovValentyn/Test-notes-list#readme"
+  }
 }

@@ -5,7 +5,8 @@ import './js/archiv-list';
 import './js/modal-add';
 import './js/modal-logic';
 import './js/remove-notes';
-
+import './js/arhiv-notes';
+import './js/write-notes';
 
 
 
