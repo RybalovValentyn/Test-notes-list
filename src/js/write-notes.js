@@ -1,35 +1,65 @@
-// import {data} from './constants';
-// import {openModal, closeModal} from './modal-add';
-// import {onselectedTask, refs} from './modal-logic'
+import {data} from './constants';
+import {openModal, closeModalButton} from './modal-add';
+import {onCreatedTask, refs, getDateForm, date, dateParse, clearlModalInput} from './create-logic';
+import {getRemoveElById} from './remove-notes';
+import {getRenderList} from './notes';
 
-// function getRewriteNotes(idElement){
-//   console.log('idElement',idElement); 
-//   getRewriteData(idElement);
-//   openModal(); 
+let elementForUpdate = {};
 
-//   refs.formTask.removeEventListener('submit', onselectedTask);
-// };
+function getRewriteNotes(idElement){    
+    refs.formBtn.removeEventListener('submit', onCreatedTask);        
+    refs.formBtn.addEventListener('submit', onRewriteDataTask );       
+  getInitialData(idElement);
+  openModal();   
+};
 
-// function getRewriteData(idElement) {
-//     let findEl = data.findIndex(el => el.id.toString() === idElement)
-//     data.find(el => {    
-//         if (el.id.toString() === idElement) {
-//              el.isArchiv = true;
-//             el.isActiv = false;
-//         return el }
-//     });
-//     initialWriteModal(data[findEl])
-//     // getRemoveElById(idElement)
-//     // getElementTextContent(data[findEl].category);
-//     // getRenderCategory(data[findEl]);
-//     };
-// export {getRewriteNotes}
+function onRewriteDataTask(e) {
+    e.preventDefault();   
 
-// function initialWriteModal(params) {
-//     console.log(params);
-//     refs.taskName.value = params.name;
-//     refs.taskContent.value = params.content;
-//     refs.taskSelekt.value = params.category;
-//     refs.taskData.value = params.data[0].split('/').join('-');
-//     console.log(params.data[0].split('/').join('-'));
-// }
+      
+    RewriteDataBase(elementForUpdate);
+}
+
+function getInitialData(idElement) {
+    let findEl = data.findIndex(el => el.id.toString() === idElement)
+    elementForUpdate =  data.find(el =>el.id.toString() === idElement);
+    initialWriteModal(data[findEl])
+    };
+
+function initialWriteModal(params) {
+    refs.taskName.value = params.name;
+    refs.taskContent.value = params.content;
+    refs.taskSelekt.value = params.category;
+    refs.taskData.value = getDateForm(date);  
+};
+
+function RewriteDataBase(elementForUpdate) {
+ let elForUpdata =[];
+    data.find((el) =>{
+        if (el.id === elementForUpdate.id) {
+            console.log('RewriteDataBase',elementForUpdate);
+            el.name = refs.taskName.value;
+            el.content =  refs.taskContent.value;
+            el.category =  refs.taskSelekt.value;
+            console.log('qqqqqqqqqqqqqqqqqqqqqqqqqqqqqq',el.data.length)
+            if (el.data.length === 0) {
+                [el.data = dateParse()];           
+                       console.log('1elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq',el.data.length);
+               }else if (el.data.length === 1 || el.data.length === 8 ) {
+                el.data = [el.data, dateParse()];             
+                console.log('2elcccccccccccccccccccccccccccccc',el);
+            }else el.data = [el.data[1], dateParse()];
+            elForUpdata = [el]
+        }
+    })
+
+
+getRemoveElById(elementForUpdate.id);
+getRenderList(elForUpdata);
+closeModalButton();
+clearlModalInput();
+
+};
+
+
+export {getRewriteNotes, onRewriteDataTask}

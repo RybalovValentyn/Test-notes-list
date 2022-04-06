@@ -4,6 +4,7 @@ import {getRenderCategory} from './archiv-list';
 import {getRewriteNotes} from './write-notes';
 
 const ContainerList = document.querySelector('.notes-list');
+
 ContainerList.addEventListener('click', onButtonClick);
 
 function onButtonClick(e) {

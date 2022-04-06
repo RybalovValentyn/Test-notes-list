@@ -20,6 +20,6 @@ const imagesPath = [
     
 }]
 
-const data = [...db.users]
+const data = [...db.users];
 
  export {imagesPath, tasksImage, data}

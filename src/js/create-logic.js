@@ -2,7 +2,7 @@ import {tasksImage} from './constants';
 import {closeModalButton} from './modal-add';
 import uniqid from 'uniqid';
 import {getRenderList} from './notes';
-import {data} from './constants';
+import { data } from './constants';
 
 const refs ={
     taskName: document.querySelector('.task-input'),
@@ -10,22 +10,20 @@ const refs ={
     taskSelekt: document.querySelector('.task-select'),
     taskData: document.querySelector('.task-data'),
     taskButton: document.querySelector('.form-submit-btn'),
-    formTask: document.querySelector('.task-form'),}
+    formBtn: document.querySelector('.task-form'),
+};
+
 const date = new Date();
-getDateForm(date)
+getDateForm(date);
 
-refs.formTask.addEventListener('submit', onselectedTask)
-
-function onselectedTask(e) {
+function onCreatedTask(e) {
     e.preventDefault();
-    let renderNotes = new GetModalData()
-    
+    let renderNotes = new GetModalData();    
     getRenderList([renderNotes]);
-
     getDataTooDb(renderNotes);
-    initialModalInput();
+    clearlModalInput();
     closeModalButton();
-}
+};
 
 function GetModalData() {
     this.id = uniqid();
@@ -39,7 +37,7 @@ function GetModalData() {
     this.pathD = '';
     this.data = [];
     if (isDate(dateParse()) !== isDate(date.toLocaleString().slice(0, 10))) {
-        this.data = dateParse();
+        this.data = [dateParse()];
     };
     tasksImage.reduce((acc, img) =>{
         if (refs.taskSelekt.value.toLowerCase().includes(img.name.toLowerCase())) {
@@ -64,6 +62,7 @@ function GetModalData() {
 function getDateForm(date) {
     let data = date.toLocaleString().slice(0, 10).split(".").reverse().join('-')
     refs.taskData.value = data
+    console.log(data);
     return data
 };
 
@@ -91,10 +90,10 @@ function getDataTooDb(notes) {
     data.push(notes)
 };
 
-function initialModalInput() {
+function clearlModalInput() {
     refs.taskName.value = '';
     refs.taskContent.value = '';
-    getDateForm(date)
-}
+    getDateForm(date);
+};
 
-export {onselectedTask, refs}
+export {onCreatedTask, refs, getDateForm, date, dateParse, clearlModalInput };

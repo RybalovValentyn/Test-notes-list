@@ -25,5 +25,6 @@ async function getRenderNoteList() {
 function getRenderList(dataLoad) {
     refs.container.insertAdjacentHTML('afterbegin', listTemplate(dataLoad) );
 
-  }
+  };
+
 export {getRenderList}
